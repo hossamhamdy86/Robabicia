@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "939522862071",
+    "firebase_url": "https://robabicia-e7220.firebaseio.com",
+    "project_id": "robabicia-e7220",
+    "storage_bucket": "robabicia-e7220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939522862071:android:19214b94fe96a753991cf2",
+        "android_client_info": {
+          "package_name": "com.example.robabicia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939522862071-c8r3215puk0r0ju7q0b2s5ed4900dkt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.robabicia",
+            "certificate_hash": "9ac6f0ad888cd6d684f723e5d94ed069d8c7e33a"
+          }
+        },
+        {
+          "client_id": "939522862071-9ra0tn3jq1klhls1fm3fv5cfpjuichdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_IfuE9gmKkPDWRhd2lJMN3grhWZOXIww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939522862071-9ra0tn3jq1klhls1fm3fv5cfpjuichdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

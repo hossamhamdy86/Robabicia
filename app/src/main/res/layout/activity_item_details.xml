@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ItemAdd">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <EditText
+                android:id="@+id/item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:maxEms="25"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_itemName"
+                app:layout_constraintTop_toBottomOf="@+id/item_imageView" />
+
+            <ImageView
+                android:id="@+id/textView_itemName"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item_title"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <EditText
+                android:id="@+id/item_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:paddingStart="10dp"
+                android:inputType="textPersonName"
+                android:textSize="17dp"
+                android:hint="Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_itemDescription"
+                app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+            <ImageView
+                android:id="@+id/textView_itemDescription"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item_description"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <EditText
+                android:id="@+id/item_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:paddingStart="10dp"
+                android:inputType="number"
+                android:textSize="17dp"
+                android:hint="Price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_itemprice"
+                app:layout_constraintTop_toBottomOf="@+id/item_description" />
+
+            <ImageView
+                android:id="@+id/textView_itemprice"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item_price"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <EditText
+                android:id="@+id/addphone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:maxEms="11"
+                android:paddingStart="10dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_personPhone"
+                app:layout_constraintTop_toBottomOf="@+id/item_price" />
+
+            <ImageView
+                android:id="@+id/textView_personPhone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/addphone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/addphone"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:maxEms="20"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_personName"
+                app:layout_constraintTop_toBottomOf="@+id/addphone" />
+
+            <ImageView
+                android:id="@+id/textView_personName"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/name"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:maxEms="15"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_location"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <ImageView
+                android:id="@+id/textView_location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/location"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@id/location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
