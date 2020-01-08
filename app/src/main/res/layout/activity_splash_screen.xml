@@ -10,30 +10,31 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        android:background="@android:color/black"
+        tools:context=".ui.SplashScreen">
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="5dp"
-            app:layout_constraintBottom_toTopOf="@id/Button_add_item"
+        <ImageView
+            android:id="@+id/image_splash"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/style_white"
+            android:src="@drawable/ic_logo2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/Button_add_item"
+        <TextView
+            android:id="@+id/splash_text"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:text="Buy and sell anything"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_add_to_list_hand_drawn_interface_symbol" />
+            app:layout_constraintTop_toBottomOf="@id/image_splash" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

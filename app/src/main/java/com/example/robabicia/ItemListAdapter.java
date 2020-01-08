@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.robabicia.model.item;
 import com.example.robabicia.ui.ItemDetails;
+import com.example.robabicia.ui.MainActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

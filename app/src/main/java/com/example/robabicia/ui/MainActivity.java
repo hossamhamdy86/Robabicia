@@ -52,14 +52,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         binding.recyclView.setLayoutManager(layoutManager);
         adapter = new ItemListAdapter(itemArrayList , this);
-        binding.recyclView.setAdapter(adapter);    }
+        binding.recyclView.setAdapter(adapter);
+    }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.Button_add_item){
             Intent intentAddItem = new Intent(this, ItemAdd.class);
             startActivity(intentAddItem);
-        }else if (v.getId() == R.id.Buttom_update){
         }
     }
 
@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         searchView.setOnQueryTextListener(this);
         return super.onCreateOptionsMenu(menu);
     }
-
 
     @Override
     public boolean onQueryTextSubmit(String query) {
